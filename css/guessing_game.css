@@ -1,0 +1,49 @@
+#heading
+{
+	
+background: #070000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #070000, #4C0001, #070000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #070000, #4C0001, #070000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+
+	
+	text-align  : center;
+	padding: 20px;
+	line-height: 1px;
+}
+h1
+{
+	font-size: 70px;
+}
+h2
+{
+	color: #070000;
+	text-align: center;
+}
+#option
+{
+	text-align: center;
+	background: white;
+	/*border:0.1px solid black;*/
+}
+#mybody
+{
+	background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#thistable
+{   
+	margin: 0px auto;
+   border-collapse: separate;
+   border-spacing: 20px;
+  
+}
+td
+{
+	line-height: 120px;
+	min-width: 120px;
+	border:1px solid transparent;
+	border-radius:20px;
+}
+
