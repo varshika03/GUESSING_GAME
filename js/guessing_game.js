@@ -1,3 +1,4 @@
+var done=0;
 var ans={r:50,g:50,b:50};
 ans["r"]=Math.floor(Math.random()*255);
 ans["g"]=Math.floor(Math.random()*255);
@@ -31,6 +32,8 @@ for(var i=0;i<6;i=i+1)
 		var restblock=document.getElementById(String(i));
 		restblock.addEventListener("click",function()
 		{
+			if(!done)
+			{
 			this.style.background= "#C9D6FF";  /* fallback for old browsers */
 this.style.background="-webkit-linear-gradient(to right, #E2E2E2, #C9D6FF)";  /* Chrome 10-25, Safari 5.1-6 */
 this.style.background="linear-gradient(to right, #E2E2E2, #C9D6FF)"; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -41,7 +44,7 @@ this.style.background="linear-gradient(to right, #E2E2E2, #C9D6FF)"; /* W3C, IE 
 						$(trying).fadeIn();
 					});
 
-        });
+        }});
 	}
 
 
@@ -51,6 +54,7 @@ this.style.background="linear-gradient(to right, #E2E2E2, #C9D6FF)"; /* W3C, IE 
 var ansgrid=document.getElementById(String(index));
 ansgrid.addEventListener("click",function()
 {
+	done=1;
     for(var i=0;i<6;i=i+1)
 {
 	var block=document.getElementById(String(i));
